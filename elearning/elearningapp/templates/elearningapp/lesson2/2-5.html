@@ -1,0 +1,36 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5>Intent</h5>
+			<hr>
+			<p>
+            You will want to make an intent after making an invocation name that triggers your skill. The intent describes what the user specifically wants to do. For example, 
+            </p>
+            <p>
+            “Alexa, ask AlarmApp to <b>set an alarm</b>...”
+            </p>
+            <p>
+            In the above example, the intent is to set an alarm.
+            </p>
+		</div>
+  </div>
+</div>
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href= "{% url '2x4' %}" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item"><a class="page-link" href="{% url '2x6' %}">6</a></li>
+      <li class="page-item"><a class="page-link" href="{% url '2x7' %}">7</a></li>
+      <li class="page-item">
+        <a class="page-link" href="{% url '2x6' %}">Next</a>
+      </li>
+    </ul>
+</nav>
+{% endblock %}

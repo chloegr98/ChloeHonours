@@ -1,0 +1,28 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5></h5>
+			<hr>
+			<p>Typically, we do a particular wake command, and when we ask Alexa a command it should awaken Alexa and will get a response by using AWS
+		</div>
+  </div>
+</div>
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href= "{% url '1x1' %}" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="{% url '1x3' %}">3</a></li>
+      <li class="page-item"><a class="page-link" href="{% url '1x4' %}">4</a></li>
+      <li class="page-item">
+        <a class="page-link" href="{% url '1x3' %}">Next</a>
+      </li>
+    </ul>
+</nav>
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends 'elearningapp/main.html'%}
+
+
+
+
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/tests.css' %}?04052020">
+
+<meta charset="UTF-8">
+
+<title>Index</title>
+</head>
+<body>
+
+    <div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+
+        <div class="top_container">
+            <h1 class="site_title">Quiz</h1>
+            <p class="site_description">Test your knowledge</p>
+            
+        </div>
+        
+
+        
+        {% if all_quiz_list %}
+
+            <section class="card_container">
+
+                    {% for quiz in all_quiz_list %}
+                        <a class="card" href="{% url 'single_quiz' quiz.id %}">
+                            <h3 class="quiz_name">{{ quiz.quiz_name }}</h3>
+                            <h6 class="num_of_questions">{{ quiz.num_of_questions }} Questions</h6>
+                        </a>
+
+                    {% endfor %}
+            </section>
+
+
+
+        {% else %}
+            <p>No quizzes are available.</p>
+        {% endif %}
+
+        <br>
+        <br>
+        <br>
+        
+
+    </div>
+
+
+</body>
+</html>
+
+
+<br>
+
+
+{% endblock %}

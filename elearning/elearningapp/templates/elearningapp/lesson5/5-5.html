@@ -1,0 +1,29 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5></h5>
+			<hr>
+			<p>
+                The AddIntent function should take the two numbers the user says and store them as values, and have an if statement that says if they exist to add them together and then vocally give the response to the user. The SubtractIntent is almost identical but uses a minus instead of a plus to subtract. With multiply having an x and *, and division having /.
+                </div>
+  </div>
+</div>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href= "{% url '5x4' %}" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">5</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '5x6' %}">6</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '5x7' %}">7</a></li>
+    <li class="page-item">
+      <a class="page-link" href="{% url '5x6' %}">Next</a>
+    </li>
+  </ul>
+</nav>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5>Intent Schema</h5>
+			<hr>
+			<p>
+            The Intent Schema are how you prepare what intents and slots look like in JSON format. It shows alexa where she needs to go to get her answer.
+            </p>
+
+
+
+		</div>
+  </div>
+</div>
+
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href= "{% url '2x8' %}" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">9</a></li>
+      <li class="page-item"><a class="page-link" href="{% url '2x10' %}">10</a></li>
+      <li class="page-item">
+        <a class="page-link" href="{% url '2x10' %}">Next</a>
+      </li>
+    </ul>
+</nav>
+{% endblock %}

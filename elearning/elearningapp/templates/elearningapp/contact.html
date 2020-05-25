@@ -1,0 +1,14 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+<br>
+<h1>Contact</h1>
+<h4>Please use the following contact form to provide any feedback</h4>
+
+<form method ="post" action="{% url 'contact' %}">
+    {% csrf_token %}
+    <textarea name="message" placeholder="Message..."></textarea>
+    <input type="submit"/>
+</form>
+
+{% endblock %}

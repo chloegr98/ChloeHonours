@@ -1,0 +1,30 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5></h5>
+			<hr>
+			<p>In order to start up Alexa we need to use “Wake Word” this consists of “Alexa” + a command
+
+
+		</div>
+  </div>
+</div>
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href= "{% url '1x2' %}" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="{% url '1x4' %}">4</a></li>
+      <li class="page-item"><a class="page-link" href="{% url '1x5' %}">5</a></li>
+      <li class="page-item">
+        <a class="page-link" href="{% url '1x4' %}">Next</a>
+      </li>
+    </ul>
+</nav>
+{% endblock %}

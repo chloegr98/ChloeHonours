@@ -1,0 +1,30 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+<br>
+
+<div class="row">
+	<div class="col-md-12">
+		<h5>Further Resources</h5>
+		<hr>
+		<div class="card card-body">
+			<table class="table table-sm">
+				<tr>
+					<th></th>
+					<th>Resource</th>
+					<th>Where to find?</th>
+				</tr>
+
+				{% for resource in resources %}
+					<tr>
+						<td></td>
+						<td>{{resource.resource_name}}</td>
+						<td>{{resource.resource_location}}</td>
+					</tr>
+                {% endfor %}
+
+			</table>
+		</div>
+	</div>
+
+{% endblock %}

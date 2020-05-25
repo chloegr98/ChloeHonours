@@ -1,0 +1,27 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5></h5>
+			<hr>
+			<p>After making our skill, in the designers panel we should drag in the Alexa Skills Kit. In order to configure it, we need to get our Skill ID from Developer Services. So, we should then go to Developer Services, select Alexa and go to Alexa Skills Kit and add a new service.. Once your’ve made the skill, view it’s id and copy it. This is how we integrate our lambda function with developer console. So, we should then go back to AWS and add the skill id to the Alexa Skills kit. 
+
+		</div>
+  </div>
+</div>
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href= "{% url '3x6' %}" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">7</a></li>
+      <li class="page-item"><a class="page-link" href="{% url '3x8' %}">8</a></li>
+      <li class="page-item">
+        <a class="page-link" href="{% url '3x8' %}">Next</a>
+      </li>
+    </ul>
+</nav>
+{% endblock %}

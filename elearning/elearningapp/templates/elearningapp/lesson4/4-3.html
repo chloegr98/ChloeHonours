@@ -1,0 +1,29 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5></h5>
+			<hr>
+			<p>Next, we should create a new skill in Developer Services called hello_word, with the invocation name “Hello World”, we should then get it’s id and link it to the AWS lambda function.
+
+		</div>
+  </div>
+</div>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href= "{% url '4x2' %}" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '4x4' %}">4</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '4x5' %}">5</a></li>
+    <li class="page-item">
+      <a class="page-link" href="{% url '4x4' %}">Next</a>
+    </li>
+  </ul>
+</nav>
+{% endblock %}

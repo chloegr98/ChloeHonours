@@ -1,0 +1,30 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5></h5>
+			<hr>
+			<p>
+                In our index.js file, we should create a variable called alexa that pulls from the alexa-sdk library. Then we create an exports handler, and create another variable that handles that specific library of tasks. We should then register these handlers in an array, and execute.
+                
+		</div>
+  </div>
+</div>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href= "{% url '4x5' %}" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">6</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '4x7' %}">7</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '4x8' %}">8</a></li>
+    <li class="page-item">
+      <a class="page-link" href="{% url '4x7' %}">Next</a>
+    </li>
+  </ul>
+</nav>
+{% endblock %}

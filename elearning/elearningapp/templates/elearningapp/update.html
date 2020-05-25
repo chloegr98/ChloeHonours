@@ -1,0 +1,14 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+<br>
+<div class="col-md">
+    <div class="card card-body">
+        <h5>{{update.update_name}}</h5>
+        <hr>
+        <p>Date: {{update.date_created}}</p>
+        <br>
+        <p>{{update.update_text}}</p>
+    </div>
+</div>
+{% endblock %}

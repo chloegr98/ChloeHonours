@@ -1,0 +1,32 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5></h5>
+			<hr>
+			<p>
+                After the lambda function is made, go to the skill in the developer console. Then we can add to the intent schema, as there is only one intent we can add that to the schema. We should also set sample utterances here, there are a variety of utterances we could add but some examples for this skill are - “Hello”, “Open Hello World”, “Hello Alexa” and “Hello World”, now if the user says this they will wake up Alexa.
+                
+                
+		</div>
+  </div>
+</div>
+
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href= "{% url '4x7' %}" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">8</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '4x9' %}">9</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '4x10' %}">10</a></li>
+    <li class="page-item">
+      <a class="page-link" href="{% url '4x9' %}">Next</a>
+    </li>
+  </ul>
+</nav>
+{% endblock %}

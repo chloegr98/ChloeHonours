@@ -1,0 +1,30 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5></h5>
+			<hr>
+			<p>To use AWS, we need to go to www.aws.amazon.com and sign up for an account. 
+                As we will be using lambda, when you sign up for your account you should specify US East as your region, as this is where lambda is typically located.
+                
+		</div>
+  </div>
+</div>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href= "{% url '3x2' %}" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '3x4' %}">4</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '3x5' %}">5</a></li>
+    <li class="page-item">
+      <a class="page-link" href="{% url '3x4' %}">Next</a>
+    </li>
+  </ul>
+</nav>
+{% endblock %}

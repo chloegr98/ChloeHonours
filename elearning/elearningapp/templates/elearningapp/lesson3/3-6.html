@@ -1,0 +1,31 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5></h5>
+			<hr>
+			<p>We should then integrate AWS with Developer Services. First we should log into AWS adn select lambda from AWS services, we should then see an interface. We can then go to create function and select author from scratch. You can from there choose a name for the function, 
+                Select the runtime as note.js and choose basic execution as a basic role.
+                
+		</div>
+  </div>
+</div>
+
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href= "{% url '3x5' %}" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">6</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '3x7' %}">7</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '3x8' %}">8</a></li>
+    <li class="page-item">
+      <a class="page-link" href="{% url '3x7' %}">Next</a>
+    </li>
+  </ul>
+</nav>
+{% endblock %}

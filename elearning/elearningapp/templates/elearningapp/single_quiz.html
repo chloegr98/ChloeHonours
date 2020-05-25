@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/single_quiz.css' %}?05052020">
+
+    <meta charset="UTF-8">
+    <title>Quiz in Progress</title>
+</head>
+<body>
+
+    <div class="full_container">
+
+        <h1 class="quiz_title">{{ quiz.quiz_name }}</h1>
+
+        <h4 class="num_of_questions">Total Questions: {{ num_of_questions }}</h4>
+
+        <a class="home_button" href="{% url 'single_question' quiz.id 1 %}">Start Quiz</a>
+        <br>
+        <br>
+        <br>
+        <a class="home_button" href="{% url 'quiz' %}">Return to Quizzes</a>
+        <a class="home_button" href="{% url 'lessons' %}">Take a Lesson</a>
+
+    </div>
+
+</body>
+</html>

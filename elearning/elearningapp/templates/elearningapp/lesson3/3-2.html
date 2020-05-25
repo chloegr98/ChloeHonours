@@ -1,0 +1,29 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5></h5>
+			<hr>
+			<p>AWS allows us to create lambda functions for our Alexa app skills, and the Amazon Devloper account allows us to publish our skills, and pulls in the skills from lambda.
+
+		</div>
+  </div>
+</div>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href= "{% url '3x1' %}" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '3x3' %}">3</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '3x4' %}">4</a></li>
+    <li class="page-item">
+      <a class="page-link" href="{% url '3x3' %}">Next</a>
+    </li>
+  </ul>
+</nav>
+{% endblock %}

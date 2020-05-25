@@ -1,0 +1,77 @@
+/* background for whole page */
+body {
+    background-color: #ebeffe;
+  }
+  
+  /* Centers question and answers and adds outline */
+  .full_container {
+      text-align: center;
+      margin-left: 250px;
+      margin-right: 250px;
+      margin-top: 125px;
+      background-color: #C8A2C8;
+      border-radius: 60px;
+      border: 3px solid #fff;
+      padding-bottom: 50px;
+  }
+  
+  
+  .results_title {
+      font-size: 90px;
+      color: white;
+      margin-bottom: 20px;
+      margin-top: 0px;
+      border-radius: 50px;
+      background-color: rgb(167, 123, 167);
+  }
+  
+  .correct_to_total {
+      font-size: 75px;
+      color: white;
+      margin-top: 0px;
+      margin-bottom: 20px;
+  }
+  
+  .accuracy_good {
+      font-size: 100px;
+      color: #2b6644;
+      margin-bottom: 20px;
+      margin-top: 0px;
+  }
+  
+  .accuracy_bad {
+      margin-top: 0px;
+      font-size: 100px;
+      color: #501e1e;
+      margin-bottom: 20px;
+  }
+  
+  
+  .home_button {
+      width: 10px;
+      box-sizing: border-box;
+      padding-left: 50px;
+      padding-right: 50px;
+      background-color: #443941;
+      font-size: 30px;
+      color: white;
+      border: 4px solid;
+      border-color: white;
+      border-radius: 50px;
+      text-decoration: none;
+  
+  }
+  
+  /* Styles submit button when hovered over */
+  .home_button:hover {
+      background-color: black;
+      cursor: pointer;
+  }
+  
+  /* Styles submit button when clicked */
+  .home_button:focus {
+      background-color: #f9f9f9;
+      color: #212121;
+      cursor: pointer;
+  
+  }

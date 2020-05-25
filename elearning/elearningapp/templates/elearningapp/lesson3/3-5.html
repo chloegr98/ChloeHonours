@@ -1,0 +1,29 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5></h5>
+			<hr>
+			<p>So, if we then choose Alexa, you can see a dashboard that explains more about Alexa, amd if you select your alexa dashboards, you can see more details about alexa and the developer console.
+
+		</div>
+  </div>
+</div>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href= "{% url '3x4' %}" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">5</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '3x6' %}">6</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '3x7' %}">7</a></li>
+    <li class="page-item">
+      <a class="page-link" href="{% url '3x6' %}">Next</a>
+    </li>
+  </ul>
+</nav>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5>Utterances</h5>
+			<hr>
+			
+            <p>These are the different ways in which someone could say their message to Alexa, not everyone will say the exact same message. Utterances are derivatives of the original request - said differently. Sample utterances should be set in order to improve the accuracy of the Alexa Skill and be able to give users who say the request in a different way the same response. For example,
+            </p>
+            <p>Some users may say: “Alexa, ask AlarmApp to set an alarm for 4am.”</p>
+
+            
+            <p>While other users may just say: “4am AlarmApp”</p>
+
+
+		</div>
+  </div>
+</div>
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href= "{% url '2x6' %}" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">7</a></li>
+      <li class="page-item"><a class="page-link" href="{% url '2x8' %}">8</a></li>
+      <li class="page-item"><a class="page-link" href="{% url '2x9' %}">9</a></li>
+      <li class="page-item">
+        <a class="page-link" href="{% url '2x8' %}">Next</a>
+      </li>
+    </ul>
+</nav>
+{% endblock %}

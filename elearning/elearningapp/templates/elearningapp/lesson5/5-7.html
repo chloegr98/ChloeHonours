@@ -1,0 +1,26 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5></h5>
+			<hr>
+			<p>Then we can successfully make our skill by adding the endpoint as the AWS lambda function, and copy in it’s ARN as the default.</div>
+  </div>
+</div>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href= "{% url '5x6' %}" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">7</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '5x8' %}">8</a></li>
+    <li class="page-item">
+      <a class="page-link" href="{% url '5x8' %}">Next</a>
+    </li>
+  </ul>
+</nav>
+{% endblock %}

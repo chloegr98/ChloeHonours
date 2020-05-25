@@ -1,0 +1,18 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5>Complete</h5>
+			<hr>
+            <p>Congratulations you have completed the lesson.</p>
+            <p><a class="btn btn-sm btn-info" href="{% url 'lessons' %}">Return to lessons</a></p>
+		</div>
+  </div>
+</div>
+
+
+{% endblock %}
+

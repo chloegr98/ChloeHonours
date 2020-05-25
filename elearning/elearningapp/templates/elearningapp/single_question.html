@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/single_question.css' %}?05052020">
+
+    <meta charset="UTF-8">
+    <title>Quiz in Progress</title>
+
+</head>
+<body>
+
+
+    <div class="full_container">
+
+        <h2 class="question_name">{{ current_question.question_name }}</h2>
+
+        {% if error_message %}
+            <p><strong>{{ error_message }}</strong></p>
+        {% endif %}
+
+        <form action="{% url 'select' quiz.id current_question.question_num %}" method="post">
+        {% csrf_token %}
+
+            <div class="radio-toolbar">
+
+                {% for selection in current_question.selection_set.all %}
+
+                    <input type="radio" name="selection" id="selection{{ forloop.counter }}" value="{{ selection.id }}">
+                    <label for="selection{{ forloop.counter }}">{{ selection.selection_text }}</label>
+                    <br>
+                    <br>
+
+                {% endfor %}
+
+            </div>
+
+        <input type="submit" class="submit_button" value={{ next_or_submit }}>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

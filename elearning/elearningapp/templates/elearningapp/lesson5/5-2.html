@@ -1,0 +1,28 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5></h5>
+			<hr>
+			<p>First, we want to make a lambda function and instead of creating from scratch we should go to blueprints and select alexa-skill-kit-sdk-factskill. We can then call it ArithmeticCalcultaor, choose basic execution as an existing role and create that function.
+		</div>
+  </div>
+</div>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href= "{% url '5x1' %}" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '5x3' %}">3</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '5x4' %}">4</a></li>
+    <li class="page-item">
+      <a class="page-link" href="{% url '5x3' %}">Next</a>
+    </li>
+  </ul>
+</nav>
+{% endblock %}

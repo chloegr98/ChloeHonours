@@ -1,0 +1,42 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5>Invocation Name: Further Notes</h5>
+			<hr>
+			
+Additionally, when you are thinking off and making an Invocation Name for your Alexa Skill there are a few requirements and details that should be taken into consideration. These are:
+<br>
+- Invocation Names should be two words or more
+<br>
+- Numbers should be written out, for example - "twenty one" for 21
+<br>
+- You are allowed to use spaces in between words.
+<br>
+- It's ok to use apostrophes, but only if they are used possessively.
+<br>
+Use a full stop when you are abbreviating something.
+<br>
+You should be using lowercase words
+
+		</div>
+  </div>
+</div>
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href= "{% url '2x3' %}" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="{% url '2x5' %}">5</a></li>
+      <li class="page-item"><a class="page-link" href="{% url '2x6' %}">6</a></li>
+      <li class="page-item">
+        <a class="page-link" href="{% url '2x5' %}">Next</a>
+      </li>
+    </ul>
+</nav>
+{% endblock %}

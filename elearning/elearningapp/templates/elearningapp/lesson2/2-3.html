@@ -1,0 +1,33 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5>Invocation Name</h5>
+			<hr>
+			<p>You will be required to create an invocation name after you make your skill. The Invocation Name is essentially the name of your application, it is how Alexa identifies what the user wants to do. For example,</p> 
+
+            <p>“Alexa, ask <b>AlarmApp</b>…”</p>
+                <p>
+                In the above example, AlarmApp would be the Invocation Name.
+                </p>
+		</div>
+  </div>
+</div>
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href= "{% url '2x2' %}" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="{% url '2x4' %}">4</a></li>
+      <li class="page-item"><a class="page-link" href="{% url '2x5' %}">5</a></li>
+      <li class="page-item">
+        <a class="page-link" href="{% url '2x4' %}">Next</a>
+      </li>
+    </ul>
+</nav>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5></h5>
+			<hr>
+			<p>In our function code, we should create Launch Request and Launch Intent the same as in the Hello World function. However, instead of HelloIntent we have four handlers called - AddIntent, SubtractIntent, MultiplyIntent and DivisionIntent, which intend to add, subtract, multiply or divide numbers when called.
+		</div>
+  </div>
+</div>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href= "{% url '5x3' %}" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '5x5' %}">5</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '5x6' %}">6</a></li>
+    <li class="page-item">
+      <a class="page-link" href="{% url '5x5' %}">Next</a>
+    </li>
+  </ul>
+</nav>
+{% endblock %}

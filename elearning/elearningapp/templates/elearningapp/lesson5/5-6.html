@@ -1,0 +1,33 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5></h5>
+			<hr>
+			<p>We should then go to the Developer Profile, and then add the intents to the intentschema. In our utterances, we should add various sample utterances for each intent such as: 
+                <br>AddIntent - “What’s number1 plus number2?” “Add number1 plus number2”
+                <br>SubtractIntent - “What’s number1 minus number2?” “number1 minus number2”
+                <br>MultiplyIntent - “What’s number1 times number2?” “Multiply number1 by number2”
+               <br> DivisionIntent - “What’s number1 divided by number2?” “Divide number1 by number2”
+                 </div>
+  </div>
+</div>
+
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href= "{% url '5x5' %}" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">6</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '5x7' %}">7</a></li>
+    <li class="page-item"><a class="page-link" href="{% url '5x8' %}">8</a></li>
+    <li class="page-item">
+      <a class="page-link" href="{% url '5x7' %}">Next</a>
+    </li>
+  </ul>
+</nav>
+{% endblock %}

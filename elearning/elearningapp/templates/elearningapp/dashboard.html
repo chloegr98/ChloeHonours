@@ -1,0 +1,48 @@
+
+{% extends 'elearningapp/main.html'%}
+{% load static %}
+
+{% block content %}
+<br>
+<h1>Welcome Back!</h1>
+<br>
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+            <p>Hi, {{request.user}}!</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p>Be sure to read any updates below before continuing!</p>
+		</div>
+  </div>
+</div>
+<p></p>
+<div class="row">
+	<div class="col-md-12">
+		<h5>News</h5>
+		<hr>
+		<div class="card card-body">
+			<table class="table table-sm">
+				<tr>
+					<th></th>
+					<th>Title</th>
+                              <th>Date Added</th>
+                              <th>Link</th>
+				</tr>
+
+				{% for update in updates %}
+					<tr>
+                                    <td></td>
+						<td>{{update.update_name}}</td>
+						<td>{{update.date_created}}</td>
+						<td><a class="btn btn-sm btn-info" href="{% url 'update' update.id %}">View</a></td>
+					</tr>
+                        {% endfor %}
+
+			</table>
+		</div>
+	</div>
+
+{% endblock %}
+

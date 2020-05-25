@@ -1,0 +1,30 @@
+{% extends 'elearningapp/main.html'%}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5>Alexa Concepts</h5>
+			<hr>
+			<p>In this lesson we will learn about Alexa Concepts, these concepts are simple to understand but should be remembered as they are very important.</p>
+
+		</div>
+  </div>
+</div>
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="{% url '2x2' %}">2</a></li>
+      <li class="page-item"><a class="page-link" href="{% url '2x3' %}">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="{% url '2x2' %}">Next</a>
+      </li>
+    </ul>
+</nav>
+{% endblock %}
+
